@@ -2,8 +2,12 @@ import { ContactForm } from './ContactForm/ContactForm';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchContact } from 'redux/operations';
-import { getContacts, getError, getIsLoading } from 'redux/selectors';
+import { fetchContact } from 'redux/contacts/operations';
+import {
+  getContacts,
+  getError,
+  getIsLoading,
+} from 'redux/contacts/selectors_contact';
 import { useEffect } from 'react';
 
 export const App = () => {
